@@ -1,0 +1,29 @@
+*{
+    position:relative;
+}
+
+
+.header{
+    height:15vh;
+    background:rgb(0,0,255,0.8);
+    color:white;
+    text-shadow:1px 2px black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.headerh1{
+    left:15%;
+    top:10%;
+}
+
+.headerh3{
+    left:60%;
+    /* top:10px; */
+}
+
+
+@media screen and (max-width:450px){
+    .headerh3{
+        top:10px;
+    }
+}

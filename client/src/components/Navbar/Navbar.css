@@ -1,0 +1,53 @@
+*{
+    position:relative;
+}
+
+
+.navbar{
+    height:10vh;
+    background:rgb(0,0,255,0.8);
+    color:black;
+    font-family: 'Oswald', sans-serif;
+    width:100%;
+    border-top:2px solid black;
+    
+}
+
+.navh3, .navLinkList{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.navh3{
+    left:10%;
+    letter-spacing:4px;
+    top:25%;
+}
+
+.navLinkList{
+    width:40%;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    left:60%;
+    top:25%;
+}
+
+
+.navItem{
+    list-style:none;
+}
+
+.navLink{
+    text-decoration:none;
+    color:white;
+}
+
+.questionLink{
+    color:black;
+    height:8px;
+    /* top:-15px; */
+}
+
+
