@@ -7,13 +7,7 @@ import "./Grocery.css"
 
 const Grocery = () => {
     const [page,setPage] = useState(2)
-    const {fetchItems,food_items} = useContext(GlobalContext)
-
-
-    useEffect(()=>{
-
-        fetchItems()
-    },[])
+ 
 
 
         switch(page){
@@ -25,7 +19,7 @@ const Grocery = () => {
             
             case 2:
                 return(
-                    <CheckOut food_items={food_items}/>
+                    <CheckOut/>
                 )
         }
     

@@ -3,7 +3,14 @@ import {BrowserRouter as Router, Route} from "react-router-dom"
 import { Navbar, Header } from "./components"
 import {Resume, Grocery} from "./pages"
 import {GlobalProvider} from "./context/GlobalState"
+import {ApolloProvider} from "react-apollo"
+import ApolloClient from "apollo-boost"
 import "./App.css"
+
+
+const client = new ApolloClient({
+    uri:"http://localhost:5000/graphql"
+})
 
  const App = () => {
 
@@ -19,6 +26,7 @@ import "./App.css"
 
 
     return (
+        <ApolloProvider client={client}>
         <GlobalProvider>
         <div>
             <Header/>
@@ -33,6 +41,7 @@ import "./App.css"
             </Router>
         </div>
         </GlobalProvider>
+        </ApolloProvider>
     )
 }
 

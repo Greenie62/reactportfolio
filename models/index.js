@@ -1,3 +1,4 @@
 const db ={
-    Client:require('./Client')
+    Client:require('./Client'),
+    Food:require('./Food')
 }

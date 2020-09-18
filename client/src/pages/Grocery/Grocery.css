@@ -32,6 +32,11 @@
 .infoRow{
   width:100%;
   height:10%;
+  border:2px dotted orange;
+}
+
+.dateFlex, .infoFlex{
+    top:10px;
 }
 
 .h5One, .h5Two, .h5Three{
@@ -61,18 +66,78 @@
     border:2px solid purple;
 }
 
-.groceryContainer{
+/* .groceryContainer{
     height:60%;
     width:100%;
     border:1px solid green;
+} */
+
+.foodItemContainer{
+    height:65%;
+    width:30%;
+    border:1px solid yellow;
 }
+
+.foodListHeaderh4{
+    text-align:center;
+    background:linear-gradient(to right,lightgray,gray)
+}
+.foodGrid{
+    height:95%;
+    width:100%;
+    border:1px solid black;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    overflow:auto;
+}
+
+.foodItem{
+    height:100%;
+    width:100%;
+    border:1px solid black;
+    border-radius:5%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.blue{
+    background:blue;
+}
+
+
+.buyBtnDiv{
+    width:100%;
+}
+
+.buyBtn{
+    background:green;
+    width:65%;
+    left:18%;
+}
+
+
+.noPointerEvent{
+    pointer-events:none;
+}
+
+.priceQuantityFlex{
+    display:flex;
+}
+
+
+/* Panel CSS */
 
 
 .panelWrapper{
     width:100%;
     height:25%;
+    position:absolute;
+    top:0;
+    top:75%;
     border:2px solid blue;
-    top:80%;
+    /* top:80%; */
     left:0%;
 }
 
@@ -88,24 +153,25 @@
     align-items:center;
     justify-content: space-evenly;
     height:100%;
+    background:white;
 }
 
 .payoptiondiv{
     width:75px;
     height:50px;
-    border:1px solid red;
+    /* border:1px solid red; */
     display:flex;
     align-items:center;
     justify-content: center;
     background:linear-gradient(to right,lightgray, gray);
-    box-shadow:0px 0px 3px 2px rgb(0,0,0,0.8)
+    box-shadow:0px 0px 3px 2px rgb(0,0,0,0.8);
+    cursor:pointer;
 }
 
 .shopperIdDiv{
     width:100%;
     height:100%;
-    z-index:2;
-    background:purple;
+    background:linear-gradient(to right,lightgray,gray)
 }
 
 .displayGrid, .numberGrid{
@@ -124,7 +190,11 @@
     width:70%;
     left:15%;
     top:15%;
-    border:1px solid black;
+    border:2px solid black;
+    border-radius:15%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
 
  .numberGrid{
@@ -144,9 +214,112 @@
     box-shadow:0px 0px 2px 2px rgb(0,0,0,0.8)
 }
 
+
+
+.shoppingCartContainer{
+    width:25%;
+    height:75%;
+    border:2px solid green;
+    position:absolute;
+    left:75%;
+    top:10%;
+}
+
+.shoppingCartList{
+    height:60%;
+    width:100%;
+    border:2px solid orange;
+}
+
+
+.itemDiv{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    border-bottom:1px solid black;
+    border-right:1px solid black;
+    margin-top:5px;
+    background:linear-gradient(to right,lightgray,gray)
+}
+
+.removeItemSpan{
+    background:red;
+    border-radius:5%;
+}
+
+
+.totalsDiv{
+    width:100%;
+    height:25%;
+    top:0%;
+    border:1px solid green;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.canvasDiv{
+    height:65%;
+    width:45%;
+    top:10%;
+    border:2px solid orange;
+    left:300px;
+    position:absolute;
+    left:30%;
+}
+
+.canvasTextOne, .canvasTextTwo{
+    font-family: 'Ranchers', cursive;
+
+}
+
+.canvasTextOne{
+    left:15%;
+    top:15%;
+    font-size:65px;
+    z-index:1;
+    position:absolute;
+}
+
+.canvasTextTwo{
+    left:35%;
+    top:40%;
+    font-size:35px;
+    z-index:1;
+    position:absolute;
+}
+
+.canvasimg{
+    height:100%;
+    width:100%;
+    z-index:-1;
+}
+
+
 @media screen and (min-width:550px){
     .payoptiondiv{
         width:100px;
+    }
+
+   
+}
+
+
+
+
+@media screen and (max-width:650px){
+    .foodGrid{
+        width:100%;
+        /* background:orange; */
+        grid-template-columns:repeat(2,1fr)
+    }
+}
+
+@media screen and (max-width:500px){
+    .foodGrid{
+        width:100%;
+        grid-template-columns:repeat(1,1fr)
     }
 }
 

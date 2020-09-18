@@ -1,2 +1,5 @@
 export {default as Inforow} from "./Inforow"
 export {default as PayPanel} from "./PayPanel"
+export {default as FoodList} from "./FoodList"
+export {default as ShoppingCart} from "./ShoppingCart"
+export {default as CanvasSwag} from "./CanvasSwag"

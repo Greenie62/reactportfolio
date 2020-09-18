@@ -1,13 +1,16 @@
 import React from 'react'
-import {Inforow,PayPanel} from "../components"
+import {Inforow,PayPanel,FoodList,ShoppingCart,CanvasSwag} from "../components"
 
 const CheckOut = ({food_items}) => {
     return (
         <div className='checkOutParent'>
             <Inforow/>
-             <div className='groceryContainer'>
+             {/* <div className='groceryContainer'> */}
+                 <FoodList/>
+                 <CanvasSwag/>
+                 <ShoppingCart/>
                  <PayPanel/>
-            </div>
+            {/* </div> */}
         </div>
     )
 }

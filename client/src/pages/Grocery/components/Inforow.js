@@ -18,7 +18,7 @@ const Inforow = () => {
         </div>
 
         <div className='infoFlex'>
-            <h5 className="h5Three"><FaReact/>'s Checkout</h5>
+            <h5 className="h5Three"><FaReact/> React.JS Checkout</h5>
         </div>
     
         </div>
