@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import { Navbar, Header } from "./components"
-import {Resume, Grocery} from "./pages"
+import {Resume, Grocery,MessageBoard} from "./pages"
 import {GlobalProvider} from "./context/GlobalState"
 import {ApolloProvider} from "react-apollo"
 import ApolloClient from "apollo-boost"
@@ -36,6 +36,7 @@ const client = new ApolloClient({
 
                 <Route exact path="/" component={Resume}/>
                 <Route exact path="/grocery" component={Grocery}/>
+                <Route exact path="/messageboard" component={MessageBoard}/>
 
                 </div>
             </Router>

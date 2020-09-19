@@ -97,7 +97,12 @@ const FoodList = () => {
                                       addItem={addItem}
                                       idx={idx}
                                       food={food}/>
-                        )) : "Loading..."}
+                        )) : <div>
+                            Loading...
+                            <a href="/grocery">Refresh</a>
+                            </div>
+                            
+                        }
                         </div>
                         
             

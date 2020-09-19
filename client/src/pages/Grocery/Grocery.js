@@ -6,7 +6,7 @@ import {Cover, CheckOut} from "./pages"
 import "./Grocery.css"
 
 const Grocery = () => {
-    const [page,setPage] = useState(2)
+    const [page,setPage] = useState(1)
  
 
 

@@ -48,6 +48,35 @@ export default function(state,action){
                 discountId:action.payload
 
             }
+
+        case "FETCH_POSTS":
+            console.log(action.payload);
+            return{
+                ...state,
+                posts:action.payload
+            }
+
+
+        case "SET_ERROR":
+            console.log(action.payload);
+            return{
+                ...state,
+                errors:[...action.payload]
+            }
+
+        case "SUCCESS":
+            console.log(action.payload);
+            return{
+                ...state,
+                success:action.payload
+            }
+
+        case "SET_ALERT":
+            console.log(action.payload);
+            return{
+                ...state,
+                alert_msg:action.payload
+            }
             
 
 

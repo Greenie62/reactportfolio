@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom"
-import {FaUser,FaQuestion, FaShoppingCart} from "react-icons/fa"
+import {FaUser,FaQuestion,FaBlog, FaShoppingCart} from "react-icons/fa"
 import { Weather } from "../Weather/Weather.js"
 
 import "./Navbar.css"
@@ -28,6 +28,12 @@ const Navbar = () => {
                     <Link className="navLink" to="/grocery">
                         <FaQuestion className="questionLink"/>
                         <FaShoppingCart className="nav-icon"/>
+                    </Link>
+                </li>
+                <li  className="navItem">
+                    <Link className="navLink" to="/messageboard">
+                        <FaQuestion className="questionLink"/>
+                        <FaBlog className="nav-icon"/>
                     </Link>
                 </li>
             </ul>

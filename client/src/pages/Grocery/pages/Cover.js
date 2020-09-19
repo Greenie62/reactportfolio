@@ -2,7 +2,7 @@ import React from 'react'
 import grocery from "../../../assets/grocery.jpg"
 
 const Cover = ({setPage,page}) => {
-    console.log(grocery)
+    // console.log(grocery)
     return (
         <div className='coverContainer'>
             <img src={grocery} alt="grocery" className="groceryWallPaper"/>

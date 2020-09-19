@@ -13,7 +13,7 @@ const clientschema = new Schema({
     email:{
         type:String,
         default:null
-    }
+    },
     password:{
         type:String,
         min:5,

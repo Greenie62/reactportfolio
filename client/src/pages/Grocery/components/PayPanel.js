@@ -69,13 +69,26 @@ const PayPanel = () => {
     }
 
 
+    const justADemo=(arg)=>{
+        if(arg === "cash"){
+            alert("Sorry, this is just a demo! 😎 ")
+        }
+        if(arg === "cc"){
+            alert("Sorry, this is just a demo, but I'll be happy to take your CC anyway. Surf over to Blog n post it! 😁")
+        }
+        if(arg === "other"){
+            alert("Hmmm, trying to solicit other services are we? You may wanna check out the dark web for that! 😜")
+        }
+    }
+
+
     
     return (
         <div className="panelWrapper">
             <div style={{zIndex:!showIdPanel ? 2 : -1}} className="payOptionGrid">
-                <div className="payoptiondiv">Cash</div>
-                <div className="payoptiondiv">CC/Debit</div>
-                <div onClick={(e)=>{console.log("testing")}} className="payoptiondiv">Other</div>
+                <div onClick={()=>justADemo('cash')} className="payoptiondiv">Cash</div>
+                <div onClick={()=>justADemo('cc')} className="payoptiondiv">CC/Debit</div>
+                <div onClick={()=>justADemo('other')} onClick={(e)=>{console.log("testing")}} className="payoptiondiv">Other</div>
                 <div onClick={togglePanel} className="payoptiondiv">ShopperID</div>
             </div>
             

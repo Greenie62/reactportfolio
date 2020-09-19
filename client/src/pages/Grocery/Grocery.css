@@ -321,6 +321,18 @@
         width:100%;
         grid-template-columns:repeat(1,1fr)
     }
+
+    .canvasTextOne{
+        font-size:35px;
+    }
+
+    .canvasTextTwo{
+        font-size:25px;
+    }
+
+    .h5Two{
+        left:30%;
+    }
 }
 
 
